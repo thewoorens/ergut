@@ -1,0 +1,11 @@
+{
+  "welcome": "Ergut Sesli Asistan",
+  "username": "Kullanıcı Adı",
+  "password": "Şifre",
+  "login": "Giriş Yap",
+  "register": "Hesap Oluştur",
+  "help": "Yardım",
+  "languageChangedTitle": "Language Change",
+  "languageChangedDescription": "To ensure the language change is applied safely and completely, please restart the application!",
+  "close": "Close"
+}

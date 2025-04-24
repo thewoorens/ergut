@@ -1,4 +1,4 @@
-![image]({EEA8921D-1404-4C86-880A-43DFEF613BFB}.png)
+![image](screenshot.png)
 
 # Ergut - AI Voice Assistant
 

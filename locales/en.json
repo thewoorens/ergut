@@ -1,0 +1,11 @@
+{
+    "welcome": "Ergut Voice Assistant",
+    "username": "Username",
+    "password": "Password",
+    "login": "Login",
+    "register": "Create Account",
+    "help": "Help",
+    "languageChangedTitle": "Dil Değişikliği",
+    "languageChangedDescription": "Dil değişikliğinin güvenli ve tamamen uygulanması için lütfen uygulamayı yeniden başlatın!",
+    "close": "Kapat"
+}
