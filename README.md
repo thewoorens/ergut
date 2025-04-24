@@ -17,7 +17,7 @@
 ### Installation
 ```bash
 git clone https://github.com/thewoorens/ergut.git
-cd ergut-assistant
+cd ergut
 pip install -r requirements.txt
 python main.py
 ```
@@ -37,7 +37,7 @@ python main.py
 ### Kurulum
 ```bash
 git clone https://github.com/thewoorens/ergut.git
-cd ergut-assistant
+cd ergut
 pip install -r requirements.txt
 python main.py
 ```
