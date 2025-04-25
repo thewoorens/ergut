@@ -7,5 +7,7 @@
   "help": "Yardım",
   "languageChangedTitle": "Language Change",
   "languageChangedDescription": "To ensure the language change is applied safely and completely, please restart the application!",
-  "close": "Close"
+  "close": "Close",
+  "settings": "Ayarlar",
+  "start": "Konuşmaya Başla"
 }

@@ -7,14 +7,15 @@ from CTkMessagebox import CTkMessagebox
 
 settings = SettingsManager()
 lm = LanguageManager()
-
 set_appearance_mode("dark")
+logo_img = Image.open('assets/logo.png').resize((300, 300))
+loading_img = Image.open('assets/loading.png').resize((300, 300))
 
 app = CTk()
 app.title("Ergut AI Voice Assistant")
 
 window_width = 500
-window_height = 600
+window_height = 800
 
 screen_width = app.winfo_screenwidth()
 screen_height = app.winfo_screenheight()
@@ -53,32 +54,39 @@ title = CTkLabel(
 )
 title.pack(pady=(80, 0))
 
-ergutLogo = CTkImage(light_image=Image.open('assets/logo.png'), dark_image=Image.open('assets/logo.png'),
-                     size=(300, 300))
+ergutLogo = CTkImage(
+    light_image=logo_img,
+    dark_image=logo_img,
+    size=(300, 300)
+)
 
 ergutLogoFrame = CTkLabel(
     master=app,
     text="",
     image=ergutLogo
 )
-
 ergutLogoFrame.pack()
 
-loginButton = CTkButton(
+transcript_box = CTkTextbox(master=app, width=400, height=300, font=("Arial", 14))
+transcript_box.pack(pady=(10, 20))
+transcript_box.configure(state="disabled")
+startButton = CTkButton(
     master=app,
-    text=lm.get_text("login"),
+    text=lm.get_text("start"),
     width=220,
     height=45,
     corner_radius=10,
     font=("Arial", 14, "bold"),
     fg_color=("#1E90FF", "#1F538D"),
+    command=lambda: Actions.start_ergut(app, transcript_box, ergutLogoFrame, ergutLogo, startButton),
     border_width=1,
 )
-loginButton.pack(pady=(10, 10))
+startButton.pack(pady=(10, 10))
 
-registerButton = CTkButton(
+
+settingsButton = CTkButton(
     master=app,
-    text=lm.get_text("register"),
+    text=lm.get_text("settings"),
     width=220,
     height=45,
     corner_radius=10,
@@ -86,7 +94,7 @@ registerButton = CTkButton(
     border_width=1,
     fg_color="transparent"
 )
-registerButton.pack(pady=(0, 10))
+settingsButton.pack(pady=(0, 10))
 
 helpButton = CTkButton(
     master=app,

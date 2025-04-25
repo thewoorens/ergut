@@ -7,5 +7,7 @@
     "help": "Help",
     "languageChangedTitle": "Dil Değişikliği",
     "languageChangedDescription": "Dil değişikliğinin güvenli ve tamamen uygulanması için lütfen uygulamayı yeniden başlatın!",
-    "close": "Kapat"
+    "close": "Kapat",
+    "settings": "Settings",
+    "start": "Start Talking"
 }
